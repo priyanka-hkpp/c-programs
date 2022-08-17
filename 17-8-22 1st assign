@@ -1,0 +1,21 @@
+// 17-8-22 1st assignment
+// to print missing element using array
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[10],n,p=1,i;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==p)
+		p++;
+		else{
+		printf("%d",p);
+		p=p+2;	
+	   }
+	}
+	
+}
