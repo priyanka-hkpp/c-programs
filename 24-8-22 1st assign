@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int t,n,i,j,k;
+clrscr();
+printf("enter the test case\n");
+scanf("%d",&t);
+while(t>0)
+{
+printf("enter the value\n");
+scanf("%d",&n);
+k=n;
+for(i=1;i<=k;i++)
+{
+n=k;
+for(j=0;j<i;j++)
+{
+printf("%d\t",n);
+n--;
+}
+printf("\n");
+}
+t--;
+}}
