@@ -1,0 +1,16 @@
+// 25-8-22 1st assignment
+// to count no of words in a string
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[100];
+	int i,count=0;
+	scanf("%[^\n]s",a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(a[i]==' ')
+		count++;
+	}
+	printf("%d",count+1);
+}
