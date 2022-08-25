@@ -1,0 +1,20 @@
+// 25-8-22 2nd assignment
+// to read a string and convert alternative character into upper string
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[50];
+	int i;
+	scanf("%s",a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if((i%2==1)|| (i==1))
+		{
+		a[i]=a[i]-32;
+	    printf("%c",a[i]);
+        }
+        else
+        printf("%c",a[i]);
+	}
+}
