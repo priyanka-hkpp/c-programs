@@ -1,0 +1,22 @@
+// 26-8-22 1st assignment
+// to print count of uppercase,lowercase and numbers in given string
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[100];
+	int count=0,flag=0,top=0,i;
+	scanf("%s",a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(isupper(a[i]))
+		count++;
+		if(islower(a[i]))
+		flag++;
+		if(isdigit(a[i]))
+		top++;	
+	}
+	printf(" Count of uppercase characters: %d\n ",count);
+	printf(" Count of lowercase characters: %d\n",flag);
+	printf(" Count of numbers:%d\n",top);
+}
