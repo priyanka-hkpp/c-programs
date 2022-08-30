@@ -1,0 +1,19 @@
+// 30-8-22 1st assignment
+// to print a in uppercase in the given string
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[50],i;
+	gets(a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(a[i]=='a')
+		{
+		a[i]=a[i]-32;
+		printf("%c",a[i]);
+	   }
+		else
+		printf("%c",a[i]);
+	}
+}
