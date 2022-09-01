@@ -1,0 +1,22 @@
+// 1-9-22 1st assignment
+// to print even or odd using fuctions
+#include<stdio.h>
+#include<conio.h>
+int oeven(int);
+int main()
+{
+	int n,a;
+	printf("Enter the value of n");
+	scanf("%d",&n);
+	oeven(n);
+	return a;
+	getch();
+}
+int oeven(int n)
+{
+	int a;
+	if(n%2==0)
+	a=printf("EVEN\n");
+	else
+	a=printf("ODD\n");
+}
