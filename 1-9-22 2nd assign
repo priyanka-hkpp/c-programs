@@ -1,0 +1,19 @@
+// 1-9-22 2nd assignment
+// to print factorial using functions
+#include<stdio.h>
+#include<conio.h>
+int fact(int);
+void main()
+{
+	int n,f;
+	scanf("%d",&n);
+	f=fact(n);
+	printf("%d",f);
+}
+int fact(int n)
+{
+	if(n!=0)
+	return n*fact(n-1);
+	else
+	return 1;
+}
