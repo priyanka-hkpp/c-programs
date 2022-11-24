@@ -1,0 +1,14 @@
+SNo=int(input())
+Name=input()
+Group=input()
+S1=int(input())
+S2=int(input())
+S3=int(input())
+print(SNo)
+print(Name)
+print(Group)
+if S1>=35 and S2>=35 and S3>=35:
+    print('Pass')
+else:
+    print('Fail')
+    
