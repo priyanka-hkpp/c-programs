@@ -1,0 +1,6 @@
+list=[1,2,3,4,5]
+n=int(input())
+if n in list:
+    print('Element is available')
+else:
+    print('Element not in list')
