@@ -1,0 +1,6 @@
+bal=10000
+print('Enter amount')
+amount=int(input())
+Mbal=bal+amount
+print(amount)
+print(Mbal)
