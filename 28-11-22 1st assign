@@ -1,0 +1,6 @@
+k=123456
+n=int(input())
+if n==k:
+    print('Valid Pin')
+else:
+    print('Invalid Pin')
