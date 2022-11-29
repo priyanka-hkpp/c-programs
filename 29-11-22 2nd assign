@@ -1,0 +1,17 @@
+name=input()
+basicsalary=int(input())
+da=int(input())
+ta=int(input())
+hra=int(input())
+ntsal=basicsalary+da+ta+hra
+if ntsal>=100000:
+    tax=ntsal*0.1
+elif ntsal>=50000:
+    tax=ntsal*0.07
+elif ntsal>=40000:
+    tax=ntsal*0.04
+elif ntsal>=20000:
+    tax=ntsal*0.02
+else:
+    tax=0
+print(tax)
