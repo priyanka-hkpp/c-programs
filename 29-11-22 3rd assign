@@ -1,0 +1,10 @@
+Sno=int(input())
+Name=input()
+Group=input()
+s1=int(input())
+s2=int(input())
+s3=int(input())
+if s1>=35 and s2>=35 and s3>=35:
+    print('Pass')
+else:
+    print('Fail')
