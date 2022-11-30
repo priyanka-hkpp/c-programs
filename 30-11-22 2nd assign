@@ -1,0 +1,49 @@
+Oil=100
+Salt=50
+Turmeric=30
+Comfort=210
+Wheel=150
+Cust_phno=input()
+Cust_name=input()
+Cust_Add=input()
+Oq=int(input())
+sq=int(input())
+tq=int(input())
+cq=int(input())
+wq=int(input())
+Bill=(Oq*Oil)+(sq*Salt)+(tq*Turmeric)+(cq*Comfort)+(wq*Wheel)
+if Bill>3000:
+    Tax=Bill*0.05
+elif Bill>2000:
+    Tax=Bill*0.07
+elif Bill>1000:
+    Tax=Bill*0.1
+elif Bill>500:
+    Tax=Bill*0.15
+else:
+    Tax=100
+Couponcode=input()
+if Couponcode=='diwali':
+    if Bill>=5000:
+        dis=Bill*0.1
+    elif Bill>=3000:
+        dis=Bill*0.06
+    elif Bill>=1000:
+        dis=Bill*0.04
+    else:
+        dis=0
+if Couponcode=='-christmas':
+    if Bill>=3000:
+        dis=Bill*0.2
+    elif Bill>=2000:
+        dis=Bill*0.1
+    elif Bill>=1000:
+        dis=Bill*0.05
+    else:
+        dis=0
+Bill=(Bill+Tax)-dis
+print(Cust_phno)
+print(Cust_name)
+print(Tax)
+print(Bill)
+print(dis)
