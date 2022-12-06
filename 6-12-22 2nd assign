@@ -1,0 +1,26 @@
+n=int(input())
+s=0
+i=0
+t=n
+if n>100000:
+    i=100000
+elif n>10000:
+    i=10000
+elif n>1000:
+    i=1000
+elif n>100:
+    i=100
+elif n>10:
+    i=10
+else:
+    i=1
+while(n!=0):
+    r=n%10
+    s=s+r*i
+    n=n//10
+    i=i/10
+if t==s:
+    print('Palindrome')
+else:
+    print('Not an Palindrome')
+
