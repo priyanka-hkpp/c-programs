@@ -1,0 +1,11 @@
+n=int(input('Number of rows'))
+m=int(input('Number of columns'))
+k=9
+for i in range(1,n+1):
+    for j in range(1,m+1):
+        print(k,end=' ')
+        k=k-1
+    print()    
+
+
+    
