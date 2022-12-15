@@ -1,0 +1,13 @@
+n=int(input())
+x=list(map(int,input().split()))
+pl=[]
+nl=[]
+for i in range(0,n):
+    if x[i]>=0:
+        pl.append(x[i])
+    else:
+        nl.append(x[i])
+l=pl+nl
+for i in range(0,n):
+    print(l[i],end=' ')
+        
