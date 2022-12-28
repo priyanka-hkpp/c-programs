@@ -1,0 +1,14 @@
+n=int(input())
+o=[]
+l=list(map(int,input().split()))
+p=n//2 
+j=n-1  
+for i in range(0,n):
+    if i>p:
+        o.append(l[j])
+        j=j-1
+        if(j==p):
+            break
+    else:
+        o.append(l[i])
+print(o)
