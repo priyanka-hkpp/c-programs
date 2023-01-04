@@ -1,0 +1,21 @@
+n=int(input())
+l=[]
+c=0
+sum=0
+for i in range(n):
+    p=[]
+    for j in range(n):
+        x=int(input())
+        p.append(x)
+    l.append(p)
+for i in range(n):
+    sum=0
+    for j in range(n):
+       sum=sum+l[i][j]
+    if sum==2:
+        c=c+1
+if c==3:
+    print('Coder Target matrix')
+else:
+    print('Not a coder target matrix')
+    
